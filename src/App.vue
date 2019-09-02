@@ -48,18 +48,37 @@
                                                 <span class="lnr lnr-magnifier form-control-feedback "></span>
                                                 <input type="text" class="form-control" placeholder="Search">
                                               </div>
-                                    <button class="btn btn-primary"><span class="lnr lnr-plus-circle font-large"></span>  ADD SCHEDULE</button>
+                                    <button class="btn btn-primary ml-2" data-toggle="modal" data-target="#newModal"><span class="lnr lnr-plus-circle font-large"></span>  ADD SCHEDULE</button>
                                 </div>
                             </div>
                             <div class="schedule-form"></div>
                         </div>
-                        
-
-
-
-<TestCalendar></TestCalendar>
+                    <TestCalendar :events="events"></TestCalendar>
                     </div>
                 </div>
+            </div>
+
+            <div class="modal fade " id="newModal">
+               <div class="modal-dialog">
+                   <div class="modal-content">
+                        <div class="modal-body">
+                           <div class="form-group">
+                               <label for="title">Event Title</label>
+                               <input type="text" name="eventTitle" id="title" class="form-control" placeholder="Enter event title" v-model="form.title">
+                            </div> 
+                            <div class="form-group">
+                                <label for="title">Event Start Date</label>
+                               <input type="date" name="start" id="start" class="form-control" v-model="form.start">
+                            </div> 
+                            <div class="form-group">
+                                <label for="end">Event End Date </label>
+                               <input type="date" name="end" id="end" class="form-control" v-model="form.end">
+                            </div> 
+                            <button class="btn btn-primary w-100" @click="addSchedule"><span class="lnr lnr-plus-circle font-large"></span>  ADD SCHEDULE</button>
+                        </div>
+                   </div>
+                </div> 
+                
             </div>
     </div>
 </template>
@@ -70,6 +89,24 @@ export default {
   name: 'app',
   components: {
     TestCalendar
+  },
+  data(){
+      return{
+           events : [
+            { title: `Mrs Steven daughter's wedding photography`, date: '2019-09-02' },
+            { title: `Mrs Peter daughter's wedding photography`, start: '2019-09-09',  end: '2019-09-12'  }
+      ],
+      form : {
+          title : '',
+          start : '',
+          end : '',
+      }
+      }
+  },
+  methods : {
+      addSchedule: function(){
+          this.events.push(this.form);
+      }
   }
 }
 </script>

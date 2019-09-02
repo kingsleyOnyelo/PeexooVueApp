@@ -12,13 +12,15 @@ export default {
   components: {
     FullCalendar // make the <FullCalendar> tag available
   },
+  props:{
+    events:{
+      type: Array,
+      required: true
+    }
+  },
   data() {
     return {
       calendarPlugins: [ dayGridPlugin ],
-      events : [
-            { title: `Mrs Steven daughter's wedding photography`, date: '2019-09-02' },
-            { title: `Mrs Peter daughter's wedding photography`, start: '2019-09-09',  end: '2019-09-12'  }
-      ]
     }
   }
 }

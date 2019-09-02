@@ -6,16 +6,16 @@
                         <h1>LOGO</h1>
                     </div>
                     <div class="navigate d-flex flex-column align-items-center">
-                        <div class="sideMenu"><i class="fa fa-address-book-o" aria-hidden="true"></i> Dashboard</div>
-                        <div class="sideMenu">Profile</div>
-                        <div class="sideMenu">Pricing Package</div>
-                        <div class="sideMenu active">Availablity</div>
-                        <div class="sideMenu">Bookings</div>
-                        <div class="sideMenu">Portfolio</div>
-                        <div class="sideMenu">Albums</div>
-                        <div class="sideMenu">Subscription</div>
-                        <div class="sideMenu">Payment</div>
-                        <div class="sideMenu">Settings</div>
+                        <div class="sideMenu"><span class="lnr lnr-chart-bars"></span>  Dashboard</div>
+                        <div class="sideMenu"><span class="lnr lnr-user"></span>  Profile</div>
+                        <div class="sideMenu"><span class="lnr lnr-inbox font-large"></span>  Pricing Package</div>
+                        <div class="sideMenu active"><span class="lnr lnr-license font-large"></span>  Availablity</div>
+                        <div class="sideMenu"><span class="lnr lnr-camera font-large"></span>  Bookings</div>
+                        <div class="sideMenu"><span class="lnr lnr-briefcase font-large"></span>  Portfolio</div>
+                        <div class="sideMenu"><span class="lnr lnr-picture font-large"></span>  Albums</div>
+                        <div class="sideMenu"><span class="lnr lnr-laptop font-large"></span>  Subscription</div>
+                        <div class="sideMenu"><span class="lnr lnr-select font-large"></span>  Payment</div>
+                        <div class="sideMenu"><span class="lnr lnr-cog font-large"></span>  Settings</div>
                         
                         
                     </div>
@@ -48,7 +48,7 @@
                                                 <span class="lnr lnr-magnifier form-control-feedback "></span>
                                                 <input type="text" class="form-control" placeholder="Search">
                                               </div>
-                                    <button class="btn btn-primary">ADD SCHEDULE</button>
+                                    <button class="btn btn-primary"><span class="lnr lnr-plus-circle font-large"></span>  ADD SCHEDULE</button>
                                 </div>
                             </div>
                             <div class="schedule-form"></div>

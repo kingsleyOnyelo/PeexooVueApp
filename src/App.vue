@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-   <div class="wrapper row pl-0 pr-0">
+ <div id="app">
+        <div class="wrapper row pl-0 pr-0">
                 <div class="sideBar col-md-3 col-sm-12 d-flex flex-column align-items-center pt-4 pr-0">
                     <div class="brand">
                         <h1>LOGO</h1>
@@ -24,7 +24,7 @@
                 </div>
                 <div class="container col-md-9 col-sm-12 d-flex flex-column  pl-0">
                     <div class="containerMenu">
-                        <ul class="d-flex mt-4"><li>Explore Photos</li> <li>Find a photographer</li> 
+                        <ul class="d-flex"><li>Explore Photos</li> <li>Find a photographer</li> 
                             <li><span class="lnr lnr-calendar-full font-large"></span></li>
                             <li><span class="lnr lnr-envelope font-large"></span></li>
                             <li><span class="lnr lnr-alarm font-large"></span></li>
@@ -52,12 +52,16 @@
                                 </div>
                             </div>
                             <div class="schedule-form"></div>
-                            <TestCalendar></TestCalendar>
                         </div>
+                        
+
+
+
+<TestCalendar></TestCalendar>
                     </div>
                 </div>
             </div>
-  </div>
+    </div>
 </template>
 
 <script>
@@ -182,7 +186,6 @@ body{
     border-radius: 50%;
 }
 .containerMenu{
-    height: 80px;
     width: 100%;
     box-shadow: 1px 1px 2px #C1C1C1;
 }

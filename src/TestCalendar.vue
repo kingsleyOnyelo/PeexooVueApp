@@ -51,4 +51,12 @@ span.fc-title{
 .fc-unthemed td.fc-today{
     background-color: #FFF3D4;
 }
+
+.fc-button-primary:disabled {
+    color: #ffc107;
+    border-color: #ffc107;
+    background: transparent;
+    padding-left: 30px;
+    padding-right: 30px;
+}
 </style>

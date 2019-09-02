@@ -161,6 +161,7 @@ body{
 .sideMenu.active{
     border-left: 9px solid #ffb500;
     background-color: #5C5C5C;
+    color:#ffb500
 }
 .containerMenu ul{
     list-style: none;
